@@ -5,6 +5,7 @@ import RenderInput from './UserEventTest/RenderInput';
 import './App.css';
 import FrameworkList from './ListComponentTest/FrameworkList';
 import UseEffectRender from './UseEffectRenderTest/UseEffectRender';
+import MockServer from './ApiMockTest/MockServer';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <RenderInput outputConsole={console.log} />
         <FrameworkList frameworks={data} />
         <UseEffectRender />
+        <MockServer />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
