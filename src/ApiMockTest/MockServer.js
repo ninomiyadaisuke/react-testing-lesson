@@ -8,13 +8,13 @@ const MockServer = () => {
 
   const fetchUser = async () => {
     axios
-      .get("https://jsonplaceholder.typicode.com/users/11")
+      .get("https://jsonplaceholder.typicode.com/users/1")
       .then((res) => {
         const { username } = res.data;
         setUsername(username);
         setClicked(true);
       })
-      .catch((err) => {
+      .catch(() => {
         setError("Fetching Failed !");
       });
   };
@@ -26,7 +26,7 @@ const MockServer = () => {
         {buttonText}
       </button>
       {username && <h3>{username}</h3>}
-      {error && <p data-testid>{error}</p>}
+      {error && <p data-testid="error">{error}</p>}
     </div>
   );
 };
