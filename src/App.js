@@ -6,6 +6,7 @@ import './App.css';
 import FrameworkList from './ListComponentTest/FrameworkList';
 import UseEffectRender from './UseEffectRenderTest/UseEffectRender';
 import MockServer from './ApiMockTest/MockServer';
+import Redux from './ReduxTest/Redux';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <FrameworkList frameworks={data} />
         <UseEffectRender />
         <MockServer />
+        <Redux />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
