@@ -60,6 +60,7 @@ describe("Reducer of ReduxToolkit", () => {
       const action = { type: incrementByAmount.type, payload: 3 };
       const state = reducer(initialState, action);
       expect(state.value).toEqual(30001);
+      
     })
   })
 });
