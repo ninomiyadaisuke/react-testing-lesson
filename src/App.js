@@ -8,6 +8,8 @@ import UseEffectRender from './UseEffectRenderTest/UseEffectRender';
 import MockServer from './ApiMockTest/MockServer';
 import Redux from './IntegrationTest/Redux';
 import ReduxAsync from './IntegrationAsyncThunkTest/ReduxAsync'
+import CustomHooks from './CustomHookTest/CustomHooks';
+
 
 function App() {
 
@@ -35,6 +37,7 @@ function App() {
         <MockServer />
         <Redux />
         <ReduxAsync />
+        <CustomHooks />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
